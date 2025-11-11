@@ -18,10 +18,10 @@ body{
 header{
 display: flex;
 flex-direction: column;
-background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.219), hsla(0, 0%, 0%, 0.87)), url(./assets/desktop/image-hero.jpg) ;
+background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.116), hsla(0, 0%, 0%, 0.582)), url(./assets/desktop/image-hero.jpg) ;
 background-repeat: no-repeat;
 background-size: cover;
-height: 45rem;
+height: 60rem;
 color: hsl(0, 0%, 100%);
 padding: 5rem 10rem;
 gap: 10rem;
@@ -46,14 +46,13 @@ li{
     position: relative;  /* Add this */
 }
 li:hover{
-    /* Add new hover styles */
     &::after {
         content: '';
         position: absolute;
         left: 25%;
         bottom: 0.5rem;
         width: 50%;
-        height: 3px;
+        height: 1.5px;
         background-color: white;
     }
 }
@@ -113,11 +112,11 @@ p{
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    width: 45%;
+    width: 40%;
     background-color: hsl(0, 0%, 100%);
     padding: 6rem;
-    right: 11%;
-    bottom: 8%;
+    right: 16%;
+    bottom: 7%;
 }
 
 /* section-two */
@@ -235,14 +234,32 @@ footer{
 }
 .foot-l{
     display: flex;
-    
 }
+
 .foot-l svg path{
     transform: scale(0.8);
 }
 .social{
 display: flex;
 gap: 1.2rem;
+}
+
+.s-effect{
+    cursor: pointer;
+    position: relative;
+    transition: all;
+}
+
+.s-effect:hover{
+    &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: -20%;
+    left: 1%;
+    background-color: white;
+    }
 }
 .social-2 {
     display: none;
@@ -256,7 +273,6 @@ gap: 1.2rem;
     display: flex;
     gap: 3rem;
     list-style: none;
-
 }
 
 
@@ -275,7 +291,7 @@ body{
   header{
 display: flex;
 flex-direction: column;
-background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.219), hsla(0, 0%, 0%, 0.87)), url(./assets/mobile/image-hero.jpg) ;
+background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.096), hsla(0, 0%, 0%, 0.644)), url(./assets/mobile/image-hero.jpg) ;
 background-repeat: no-repeat;
 background-size: cover;
 height: 55rem;
@@ -304,20 +320,20 @@ nav ul{
   overflow: hidden;
 }
 h1{
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       font-family: Josefin Sans;
       text-transform: uppercase;
       font-weight: 300;
 }
 h2{
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-family: Josefin Sans;
     font-weight: 300;
     text-transform: uppercase;
 }
 h3{
-    font-size: 1.5rem;
-    width: 40%;
+    font-size: 1.2rem;
+    width: 60%;
     font-family: Josefin Sans;
     font-weight: 300;
     text-transform: uppercase;
@@ -328,7 +344,7 @@ h3{
 }
 p{
     color: hsl(0, 0%, 60%);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
  
 
@@ -446,7 +462,7 @@ background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.678
      letter-spacing: 0.5rem;
 }
 
-.btn-second{
+.btn-second:hover{
     background: black;
     color: white;
 }
@@ -486,6 +502,7 @@ display: none;
 .social{
 display: none;
 }
+
 
 .social-2 {
     display: flex;
